@@ -16,9 +16,9 @@ const App = () => {
   }
 
   return (
-    <div id="app" className="d-flex flex-column h-100">
+    <div id="app" className="container-fluid">
       <NavBar />
-      <div className="container flex-grow-1">
+      <div className="">
         <Switch>
           <Route path="/" exact component={Home} />
           <ProtectedRoute path="/profile" component={Profile} />
