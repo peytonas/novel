@@ -28,23 +28,22 @@ Your React application will redirect users to Auth0 whenever they trigger an aut
 
 As such, click on the "Settings" tab of your Auth0 Application page and fill in the following values:
 
-
 **Allowed Callback URLs**
 
 ```bash
-http://localhost:4040
+http://localhost:3000
 ```
 
 **Allowed Logout URLs**
 
 ```bash
-http://localhost:4040
+http://localhost:3000
 ```
 
 **Allowed Web Origins**
 
 ```bash
-http://localhost:4040
+http://localhost:3000
 ```
 
 **Scroll down and click the "Save Changes" button.**
@@ -76,9 +75,9 @@ Run the client project:
 npm start
 ```
 
-The application runs by on port `4040` to mitigate conflicting with other client applications you may be running.
+The application runs by on port `3000` to mitigate conflicting with other client applications you may be running.
 
-Visit [`http://localhost:4040/`](http://localhost:4040/) to access the starter application.
+Visit [`http://localhost:3000/`](http://localhost:3000/) to access the starter application.
 
 ## Set up the Demo API
 
@@ -109,7 +108,7 @@ npm install
 Head to the [APIs section in the Auth0 Dashboard](https://manage.auth0.com/#/apis), and click the "Create API" button.
 
 Then, in the form that Auth0 shows:
- 
+
 - Add a **Name** to your API:
 
 ```bash
@@ -138,7 +137,7 @@ Populate this `auth0-express-js-sample/.env` file as follows:
 
 ```bash
 SERVER_PORT=6060
-CLIENT_ORIGIN_URL=http://localhost:4040
+CLIENT_ORIGIN_URL=http://localhost:3000
 AUTH0_AUDIENCE=
 AUTH0_DOMAIN=
 ```
@@ -162,6 +161,7 @@ Now, **follow these steps to get the Auth0 Domain value**:
 5. Paste the Auth0 domain value as the value of `AUTH0_DOMAIN` in `.env`.
 
 > **Tips to get the Auth0 Domain**
+>
 > - The Auth0 Domain is the substring between the protocol, `https://` and the path `/oauth/token`.
 > - The Auth0 Domain follows this pattern: `tenant-name.region.auth0.com`.
 > - The `region` subdomain (`au`, `us`, or `eu`) is optional. Some Auth0 Domains don't have it.
