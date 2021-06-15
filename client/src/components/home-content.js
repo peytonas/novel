@@ -1,8 +1,8 @@
 import React from "react";
 
 const HomeContent = () => (
-  <div className="next-steps">
-    <h2 className="my-5 text-center">What can I do next?</h2>
+  <div className="">
+    <h2 className="text-center">What can I do next?</h2>
 
     <div className="row">
       <div className="col-md-5 mb-4">

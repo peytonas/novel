@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 
-import { NavBar, Footer, Loading } from "./components";
+import { NavBar, Loading } from "./components";
 import { Home, Profile} from "./views";
 import ProtectedRoute from "./auth/protected-route";
 
@@ -16,7 +16,7 @@ const App = () => {
   }
 
   return (
-    <div id="app" className="container-fluid">
+    <div id="app" className="container-fluid bg-home">
       <NavBar />
       <div className="">
         <Switch>
@@ -24,7 +24,6 @@ const App = () => {
           <ProtectedRoute path="/profile" component={Profile} />
         </Switch>
       </div>
-      <Footer />
     </div>
   );
 };

@@ -4,10 +4,10 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 const Profile = () => {
   const { user } = useAuth0();
-  const { name, picture, email } = user;
+  const { nickname, picture, email, sub} = user;
 
   return (
-    <div>
+    <div sub={sub}>
       <div className="row align-items-center profile-header">
         <div className="col-md-2 mb-3">
           <img
@@ -17,7 +17,7 @@ const Profile = () => {
           />
         </div>
         <div className="col-md text-center text-md-left">
-          <h2>{name}</h2>
+          <h2>{nickname}</h2>
           <p className="lead text-muted">{email}</p>
         </div>
       </div>

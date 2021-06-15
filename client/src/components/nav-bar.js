@@ -5,7 +5,7 @@ import AuthNav from "./auth-nav";
 
 const NavBar = () => {
   return (
-      <nav className="row bg-light">
+      <nav className="row nav-bg-dark">
             <MainNav />
             <AuthNav />
       </nav>
